@@ -27,7 +27,7 @@ public class QuesController {
 	public List<Questions> viewAll(){
 		return service.viewQuestions();
 	}
-	@DeleteMapping("/delete/{id}")
+	@DeleteMapping("/deleted/{id}")
 	public void delete(@PathVariable int id) {
 		service.Delete(id);
 	}
