@@ -22,7 +22,7 @@ public class LoginController {
 		public String Hi() {
 			return "hello";
 		}
-    @PostMapping("/create")
+    @PostMapping("/createl")
 	public Login create(@RequestBody Login login) {
 		return service.createAccount(login);
 	}
